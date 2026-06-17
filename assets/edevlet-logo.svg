@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="70" viewBox="0 0 260 70" role="img" aria-label="turkiye.gov.tr">
+  <defs>
+    <linearGradient id="red" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fb3a3f"/>
+      <stop offset="1" stop-color="#c91928"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(5 8)">
+    <path d="M6 12 56 0l24 18-7 36-38 9L0 43Z" fill="url(#red)"/>
+    <path d="M58 18c-14-8-36-2-43 12-6 12 3 22 18 22 11 0 23-5 31-13-7 4-16 7-25 7-13 0-20-7-16-16 5-11 22-16 35-12Z" fill="#fff"/>
+    <path d="m55 24 4 5 7-2-4 6 4 6-7-2-4 5v-7l-7-2 7-2Z" fill="#fff"/>
+  </g>
+  <text x="96" y="34" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#e21e2d">turkiye.gov.tr</text>
+  <text x="98" y="51" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#2f3b46">e-Devlet Kapisi</text>
+</svg>

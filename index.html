@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>e-Devlet Kapisi | Kisisel Portal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app" aria-label="Kisisel portal uygulamasi">
+    <section class="login-view" id="loginView" aria-label="Giris ekrani">
+      <div class="login-card">
+        <header class="login-header">
+          <div class="brand-block">
+            <img class="brand-emblem" src="assets/edevlet-shield.svg" alt="e-Devlet amblemi">
+            <div>
+              <h1>e-Devlet Kapisi</h1>
+              <p>Kisisel Portal Girisi</p>
+            </div>
+          </div>
+          <div class="gov-tr">
+            <img src="assets/edevlet-logo.svg" alt="">
+            <strong>e-Devlet Kapisi</strong>
+            <span>https://www.turkiye.gov.tr</span>
+          </div>
+        </header>
+
+        <div class="login-info">
+          <p>Balıkesir Üniversitesi Internet Programlama final projesi icin hazirlanan kisisel portaldir.</p>
+        </div>
+
+        <div class="profile-login">
+          <div class="profile-photo" aria-label="Profil fotografi alani">
+            <span class="avatar-head"></span>
+            <span class="avatar-body"></span>
+            <span class="avatar-spark"></span>
+          </div>
+          <span class="welcome-pill">Hos geldiniz</span>
+          <h2>BİLGE AKSAKAL</h2>
+          <p>Balıkesir Üniversitesi ogrenci portali</p>
+          <div class="login-meta" aria-label="Profil ozetleri">
+            <span>Final Projesi</span>
+            <span>Kisisel Bilgiler</span>
+            <span>JS Etkilesimli</span>
+          </div>
+          <button class="primary-btn" id="enterButton" type="button">Giris Yap</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="portal-view is-hidden" id="portalView" aria-label="Ana ekran">
+      <header class="portal-topbar">
+        <div class="portal-inner nav-inner">
+          <div class="portal-brand">
+            <img src="assets/edevlet-logo-white.svg" alt="turkiye.gov.tr">
+          </div>
+          <nav class="top-actions" aria-label="Ust menu">
+            <button type="button" class="quick-btn">
+              <span class="mini-icon">?</span>
+              Hizli Cozum
+            </button>
+            <button type="button" class="icon-btn" aria-label="Kisayollar">★</button>
+            <div class="search-wrapper">
+              <label class="search-box" for="portalSearch">
+                <input id="portalSearch" type="search" placeholder="Nasil yardim edebilirim?" autocomplete="off">
+                <span>⌕</span>
+              </label>
+              <div class="search-suggestions is-hidden" id="searchSuggestions" role="listbox" aria-label="Arama onerileri"></div>
+            </div>
+            <button type="button" class="account-btn" id="accountButton">
+              <span class="account-dot"></span>
+              BİLGE
+              <span class="badge">6</span>
+              <span>⌄</span>
+            </button>
+          </nav>
+        </div>
+      </header>
+
+      <section class="hero-strip" aria-label="Duyuru alani">
+        <div class="portal-inner hero-card">
+          <div class="notice-card">
+            <p>Balıkesir Üniversitesi</p>
+            <strong>Internet sitesini ziyaret edin.</strong>
+            <button class="notice-link" type="button" id="studentInfoButton">Ogrenci bilgisini gor</button>
+          </div>
+          <div class="banner-card" id="bannerCard">
+            <button class="slider-control prev" type="button" id="prevSlide" aria-label="Onceki duyuru">‹</button>
+            <span class="banner-hand"></span>
+            <div class="banner-copy" id="bannerCopy"></div>
+            <div class="slider-dots" id="sliderDots" aria-label="Duyuru secimi"></div>
+            <button class="slider-control next" type="button" id="nextSlide" aria-label="Sonraki duyuru">›</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="services-section" aria-label="Kisisel kartlar">
+        <div class="portal-inner">
+          <div class="section-heading">
+            <div>
+              <p>Kisisel hizmetler</p>
+              <h2>Bilge Aksakal Portal Kartlari</h2>
+            </div>
+            <span id="resultCount">10 hizmet</span>
+          </div>
+          <div class="service-panel">
+            <div class="service-grid" id="serviceGrid"></div>
+          </div>
+          <div class="recent-panel" aria-label="Son kullanilan hizmetler">
+            <div class="section-heading compact">
+              <div>
+                <p>Gecmis</p>
+                <h2>Son Kullanilan Hizmetler</h2>
+              </div>
+              <button class="clear-recent" id="clearRecent" type="button">Temizle</button>
+            </div>
+            <div class="recent-list" id="recentList"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="blue-section" aria-label="One cikan hizmetler">
+        <div class="portal-inner feature-grid" id="featureGrid"></div>
+      </section>
+    </section>
+  </main>
+
+  <dialog class="detail-modal" id="detailModal" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" type="button" aria-label="Pencereyi kapat">x</button>
+    <div class="modal-icon" id="modalIcon"></div>
+    <p class="modal-kicker" id="modalKicker"></p>
+    <h2 id="modalTitle"></h2>
+    <div class="modal-body" id="modalBody"></div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
